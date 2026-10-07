@@ -12,7 +12,7 @@ body {
     padding: 20px;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background: url("dssw.png") center/cover fixed no-repeat;
+    background: url("images/dssw.png") center/cover fixed no-repeat;
 
     display: flex;
     align-items: center;
