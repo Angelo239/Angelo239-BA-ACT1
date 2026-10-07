@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url("dssw.png") center/cover fixed no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGIN AND REGISTER BOXES */
+
+.login-container,
+.register-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-container {
+    max-width: 350px;
+}
+
+.register-container {
+    max-width: 400px;
+}
+
+/* HEADINGS */
+
+.login-container h1,
+.register-container h1 {
+    text-align: center;
+    margin: 0 0 25px;
+    color: #2c3e50;
+    font-family: Georgia, serif;
+}
+
+/* FORMS */
+
+.login-form,
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* LABELS */
+
+.login-form label,
+.register-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* INPUT FIELDS */
+
+.login-form input,
+.register-form input,
+.input-box input {
+    width: 100%;
+    max-width: 100%;
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+}
+
+.login-form input:focus,
+.register-form input:focus,
+.input-box input:focus {
+    outline: none;
+    border-color: #5d3ccc;
+    box-shadow: 0 0 4px rgba(93, 60, 204, 0.4);
+}
+
+/* REMEMBER ME */
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.options input {
+    width: auto;
+}
+
+/* LINKS */
+
+.options a,
+.register a,
+.login-link a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.options a:hover,
+.register a:hover,
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* BUTTONS */
+
+.login-btn,
+.register-btn {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #5d3ccc;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background: #4930a3;
+}
+
+/* TEXT BELOW FORMS */
+
+.register,
+.login-link {
+    text-align: center;
+    margin: 15px 0 0;
+    font-size: 14px;
+}
+
+/* INPUT WITH ICON */
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    padding-right: 35px;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    pointer-events: none;
+}
+
+/* TABLET */
+
+@media (width < 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .login-container,
+    .register-container {
+        padding: 25px 20px;
+    }
+}
+
+/* PHONE */
+
+@media (width < 400px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .login-container,
+    .register-container {
+        padding: 22px 16px;
+        border-radius: 10px;
+    }
+
+    .login-container h1,
+    .register-container h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .login-form,
+    .register-form {
+        gap: 9px;
+    }
+
+    .login-form input,
+    .register-form input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .options {
+        font-size: 11px;
+    }
+
+    .options a {
+        text-align: right;
+    }
+
+    .login-btn,
+    .register-btn {
+        padding: 10px;
+    }
+
+    .register,
+    .login-link {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+/* VERY SMALL PHONES */
+
+@media (width < 340px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .login-container,
+    .register-container {
+        padding: 20px 14px;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .options a {
+        text-align: left;
+    }
+}
+

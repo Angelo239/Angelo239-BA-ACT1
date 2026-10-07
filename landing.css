@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: #080808;
+    color: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 14px 0;
+}
+
+.navbar-brand,
+.nav-link,
+h1,
+h2,
+h3 {
+    font-family: "Orbitron", sans-serif;
+}
+
+.navbar-brand {
+    color: #ffd43b !important;
+    letter-spacing: 3px;
+}
+
+.nav-link {
+    margin-left: 12px;
+}
+
+.nav-link:hover {
+    color: #ffd43b !important;
+}
+
+/* HOME */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .45),
+        rgba(0, 0, 0, .65)),
+        url("tattoine.png");
+
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+
+.small-title {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #ffd43b;
+    margin-bottom: 15px;
+}
+
+.hero-section h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #ffd43b;
+}
+
+.hero-text {
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 25px 0;
+}
+
+/* ABOUT */
+
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .72),
+        rgba(0, 0, 0, .72)),
+        url("avsd.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 100px 0;
+}
+
+.about-section h2,
+.movies-section h2 {
+    color: #ffd43b;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.about-section p {
+    line-height: 1.7;
+}
+
+.about-section h3 {
+    color: #ffd43b;
+    font-size: 20px;
+}
+
+/* MOVIES */
+
+.movies-section {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .78),
+        rgba(0, 0, 0, .85)),
+        url("stars.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 100px 0;
+}
+
+.intro-text {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* MOVIE CARDS */
+
+.movie-card {
+    background: rgba(20, 20, 20, .9);
+    color: white;
+    border: 1px solid #555;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffd43b;
+}
+
+.movie-image {
+    height: 280px;
+    object-fit: cover;
+}
+
+.movie-card .card-body {
+    padding: 25px;
+}
+
+.episode {
+    color: #ffd43b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.card-title {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.card-text {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.year {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    background: #ffd43b;
+    color: #111;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #050505;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ffd43b;
+    text-decoration: none;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: 90vh;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 50px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+    .about-section h2,
+    .movies-section h2 {
+        font-size: 35px;
+    }
+}
+
+/* PHONE */
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 100px 20px 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 38px;
+    }
+
+    .about-section,
+    .movies-section {
+        padding: 80px 20px;
+    }
+
+    .about-section h2,
+    .movies-section h2 {
+        font-size: 30px;
+    }
+
+    .navbar-brand {
+        font-size: 17px;
+    }
+}
